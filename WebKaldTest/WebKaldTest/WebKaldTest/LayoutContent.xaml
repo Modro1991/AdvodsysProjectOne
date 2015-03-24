@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:XamarinFormsXamlSample;assembly=XamarinFormsXamlSample"
+             xmlns:constants="clr-namespace:XamarinFormsSample;assembly=XamarinFormsXamlSample"
+             x:Class="XamarinFormsXamlSample.Views.EmployeeListPage"
+             Title="Employee List">
+</ContentPage>
