@@ -2,7 +2,7 @@
 using System.Text;
 using System.Xml.Serialization;
 
-namespace PortAbleDataFangst
+namespace WebKaldTest
 {
     public class Sag
     {

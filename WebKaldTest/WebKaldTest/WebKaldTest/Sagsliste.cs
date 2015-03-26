@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
-using AdvosysPortableCore;
+using WebKaldTest;
 
-namespace PortAbleDataFangst
+namespace WebKaldTest
 {
     public class Sagsliste
     {

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using System.Collections.Generic;
 
-namespace AdvosysPortableCore
+namespace WebKaldTest
 {
     public static class WebServiceKald
     {
