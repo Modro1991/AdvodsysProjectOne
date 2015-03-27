@@ -35,17 +35,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="LayoutContent.xaml.cs">
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\DataFangstLayout.cs" />
+    <Compile Include="View\LayoutContent.xaml.cs">
       <DependentUpon>LayoutContent.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sag.cs" />
-    <Compile Include="Sagsliste.cs" />
-    <Compile Include="WebServiceKald.cs" />
-    <Compile Include="Menu.cs" />
+    <Compile Include="View\Menu.cs" />
+    <Compile Include="Model\Sag.cs" />
+    <Compile Include="Model\Sagsliste.cs" />
+    <Compile Include="Model\WebServiceKald.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="LayoutContent.xaml">
+    <EmbeddedResource Include="View\LayoutContent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -75,5 +76,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
+    <Folder Include="Model\" />
   </ItemGroup>
 </Project>
