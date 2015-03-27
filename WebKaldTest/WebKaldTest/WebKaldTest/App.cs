@@ -12,6 +12,8 @@ namespace WebKaldTest
         public App()
         {
 			MainPage = new Menu ();//new LayoutContent();
+
+		
         }
     }
 }

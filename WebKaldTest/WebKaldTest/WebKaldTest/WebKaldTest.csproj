@@ -37,19 +37,11 @@
     <Compile Include="App.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\DataFangstLayout.cs" />
-    <Compile Include="View\LayoutContent.xaml.cs">
-      <DependentUpon>LayoutContent.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\Menu.cs" />
     <Compile Include="Model\Sag.cs" />
     <Compile Include="Model\Sagsliste.cs" />
     <Compile Include="Model\WebServiceKald.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="View\LayoutContent.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
+    <Compile Include="View\SagsLayout.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.1.4.0.6341\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.4.0.6341\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />

@@ -15,9 +15,15 @@ namespace WebKaldTest
 				HorizontalOptions = LayoutOptions.Center
 			};
 
+			Entry entry = new Entry 
+			{
+
+			};
+			
 			Content = new StackLayout { 
 				Children = {
-
+					header,
+					entry
 				}
 			};
 		}
