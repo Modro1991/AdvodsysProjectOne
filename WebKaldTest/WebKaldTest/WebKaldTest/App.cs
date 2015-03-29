@@ -11,7 +11,7 @@ namespace WebKaldTest
     {
         public App()
         {
-			MainPage = new Sagslayout();
+			MainPage = new Menu();
 
 
         }

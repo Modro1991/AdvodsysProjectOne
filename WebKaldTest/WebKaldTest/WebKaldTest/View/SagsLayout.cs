@@ -11,17 +11,17 @@ using System.Net.Http;
 
 namespace WebKaldTest
 {
-	public class LayoutContent : ContentPage
+	public class Sagslayout : ContentPage
 	{
 		Sagsliste sagsliste;
 
 		Label label;
 		private void InitializeComponent()
 		{
-			this.LoadFromXaml(typeof(LayoutContent));
+			this.LoadFromXaml(typeof(Sagslayout));
 			Sagsliste sagsliste = new Sagsliste();
 		}
-		public LayoutContent()
+		public Sagslayout()
 		{
 			Label header = new Label
 			{
@@ -47,9 +47,13 @@ namespace WebKaldTest
 				HorizontalOptions = LayoutOptions.Center,
 				VerticalOptions = LayoutOptions.CenterAndExpand
 			};
-
+			var scrollview = new ScrollView{			
+				//HorizontalOptions = LayoutOptions.End,
+				//IsClippedToBounds = true,
+				Orientation = ScrollOrientation.Vertical,
+				VerticalOptions = LayoutOptions.Fill,
 			// Build the page.
-			this.Content = new StackLayout
+			 Content = new StackLayout
 			{
 				Children = 
 				{
@@ -57,8 +61,15 @@ namespace WebKaldTest
 					button,
 					label
 				}
+					},
 				};
-		}
+			this.Content = new StackLayout {
+				Children = {
+					scrollview
+				}
+			};
+				
+			}
 		async void OnButtonClicked(object sender, EventArgs e)
 		{
 			sagsliste = new Sagsliste();
