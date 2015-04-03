@@ -1,16 +1,18 @@
 ﻿<Properties StartupItem="WebKaldTest\WebKaldTest.Droid\WebKaldTest.Droid.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Galaxy_nexus_API_LEVEL_15" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebKaldTest\WebKaldTest\View\DataFangstLayout.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.0.103:5555" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebKaldTest\WebKaldTest\App.cs">
     <Files>
-      <File FileName="WebKaldTest\WebKaldTest\App.cs" Line="14" Column="35" />
+      <File FileName="WebKaldTest\WebKaldTest\App.cs" Line="18" Column="20" />
       <File FileName="WebKaldTest\WebKaldTest\View\SagsLayout.cs" Line="1" Column="1" />
-      <File FileName="WebKaldTest\WebKaldTest\View\DataFangstLayout.cs" Line="135" Column="32" />
-      <File FileName="WebKaldTest\WebKaldTest\View\Menu.cs" Line="1" Column="1" />
+      <File FileName="WebKaldTest\WebKaldTest\View\DataFangstLayout.cs" Line="132" Column="4" />
+      <File FileName="WebKaldTest\WebKaldTest\View\Menu.cs" Line="58" Column="1" />
       <File FileName="WebKaldTest\WebKaldTest.Droid\MainActivity.cs" Line="1" Column="1" />
       <File FileName="WebKaldTest\WebKaldTest\Model\Sagsliste.cs" Line="1" Column="1" />
       <File FileName="WebKaldTest\WebKaldTest\Model\WebServiceKald.cs" Line="1" Column="1" />
       <File FileName="WebKaldTest\WebKaldTest.Droid\Properties\AndroidManifest.xml" Line="1" Column="1" />
       <File FileName="WebKaldTest\WebKaldTest\Model\Sag.cs" Line="1" Column="1" />
+      <File FileName="WebKaldTest\WebKaldTest\View\RedigerDataFangstLayout.cs" Line="75" Column="12" />
+      <File FileName="WebKaldTest\WebKaldTest\packages.config" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

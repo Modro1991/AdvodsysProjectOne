@@ -122,7 +122,8 @@ namespace WebKaldTest
 			{
 				Text = "Gem",
 				Font = Font.SystemFontOfSize(30, FontAttributes.Bold),
-				TextColor = Color.Silver
+				TextColor = Color.Silver,
+
 			};
 
 			//----------egne------------------------
