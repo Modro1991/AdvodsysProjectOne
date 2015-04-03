@@ -11,13 +11,9 @@ namespace WebKaldTest
     {
         public App()
         {
-//			MainPage = new Menu();
-			var tabs = new TabbedPage ();
+			MainPage = new Menu();
 
-			tabs.Children.Add(new DataFangstLayout {Title = "Se Data" });
-			tabs.Children.Add(new RedigerDataFangstLayout {Title = "Rediger Data" });
 
-			MainPage = tabs;
         }
     }
 }

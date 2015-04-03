@@ -27,7 +27,6 @@ namespace WebKaldTest
 				TextColor = Color.Black,
 				HorizontalOptions = LayoutOptions.Fill,
 				VerticalOptions = LayoutOptions.Center
-
 			};
 
 			b2 = new Button {
@@ -55,13 +54,8 @@ namespace WebKaldTest
 				}
 			};
 
-//			b1.Clicked += (object sender, EventArgs e) => 
-//			{
-//				
-//			
-//			};
+			
 		}
-
 	}
 }
 

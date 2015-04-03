@@ -27,8 +27,7 @@ namespace WebKaldTest
 			{
 				Placeholder = "indtast navn",
 				BackgroundColor = Color.FromRgba(255, 255, 255, 0.3),
-				TextColor = Color.Black,
-				IsEnabled = false
+				TextColor = Color.Black
 			};
 			//------------------adresse--------------------------
 //			Label adresse = new Label {
@@ -40,8 +39,7 @@ namespace WebKaldTest
 			{
 				Placeholder = "indtast adresse",
 				BackgroundColor = Color.FromRgba(255, 255, 255, 0.3),
-				TextColor = Color.Black,
-				IsEnabled = false
+				TextColor = Color.Black
 			};
 			//------------------postnr--------------------------
 //			Label postnr = new Label {
@@ -53,8 +51,7 @@ namespace WebKaldTest
 			{
 				Placeholder = "indtast postnummer",
 				BackgroundColor = Color.FromRgba(255, 255, 255, 0.3),
-				TextColor = Color.Black,
-				IsEnabled = false
+				TextColor = Color.Black
 			};
 			//------------------vedr--------------------------
 //			Label vedr = new Label {
@@ -66,8 +63,7 @@ namespace WebKaldTest
 			{
 				Placeholder = "indtast vedrørende",
 				BackgroundColor = Color.FromRgba(255, 255, 255, 0.3),
-				TextColor = Color.Black,
-				IsEnabled = false
+				TextColor = Color.Black
 			};
 			//------------------dato--------------------------
 //			Label dato = new Label {
@@ -77,8 +73,7 @@ namespace WebKaldTest
 //			};
 			DatePicker date = new DatePicker {
 			Date = DateTime.Today,
-			BackgroundColor = Color.FromRgba(255, 255, 255, 0.3),
-			IsEnabled = false
+			BackgroundColor = Color.FromRgba(255, 255, 255, 0.3)
 			};
 			//------------------beløb--------------------------
 //			Label belob = new Label {
@@ -90,8 +85,7 @@ namespace WebKaldTest
 			{
 				Placeholder = "indtast beløb",
 				BackgroundColor = Color.FromRgba(255, 255, 255, 0.3),
-				TextColor = Color.Black,
-				IsEnabled = false
+				TextColor = Color.Black
 			};
 			//------------------rente--------------------------
 //			Label rente = new Label {
@@ -103,8 +97,7 @@ namespace WebKaldTest
 			{
 				Placeholder = "indtast rente",
 				BackgroundColor = Color.FromRgba(255, 255, 255, 0.3),
-				TextColor = Color.Black,
-				IsEnabled = false
+				TextColor = Color.Black
 			};
 			//------------------gebyr--------------------------
 //			Label gebyr = new Label {
@@ -116,17 +109,16 @@ namespace WebKaldTest
 			{
 				Placeholder = "indtast gebyr",
 				BackgroundColor = Color.FromRgba(255, 255, 255, 0.3),
-				TextColor = Color.Black,
-				IsEnabled = false
+				TextColor = Color.Black
 			};
 
 			//-----------Button-------------------
-//			Button button = new Button 
-//			{
-//				Text = "Rediger",
-//				Font = Font.SystemFontOfSize(30, FontAttributes.Bold),
-//				TextColor = Color.Silver
-//			};
+			Button button = new Button 
+			{
+				Text = "Rediger",
+				Font = Font.SystemFontOfSize(30, FontAttributes.Bold),
+				TextColor = Color.Silver
+			};
 		
 			//----------egne------------------------
 
@@ -141,8 +133,6 @@ namespace WebKaldTest
 				Content = new StackLayout {
 					Orientation = StackOrientation.Vertical,
 					Padding = new Thickness (20),
-					Spacing = 20,
-
 
 					Children = {
 						header,
@@ -153,7 +143,8 @@ namespace WebKaldTest
 						date,
 						entry5,
 						entry6,
-						entry7
+						entry7,
+						button
 					}
 				},
 				};
