@@ -130,8 +130,6 @@ namespace WebKaldTest
 		
 			//----------egne------------------------
 
-
-
 			var scrollview = new ScrollView{			
 				//HorizontalOptions = LayoutOptions.End,
 				//IsClippedToBounds = true,

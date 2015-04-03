@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 using WebKaldTest;
 using Xamarin.Forms;
 
@@ -45,8 +44,33 @@ namespace WebKaldTest
 				HorizontalOptions = LayoutOptions.Fill,
 				VerticalOptions = LayoutOptions.Center
 			};
-			this.Content = new StackLayout {
+			b1.Clicked += delegate
+			{
+//				App.Current.MainPage = new Sagslayout();
+//				new NavigationPage(new Sagslayout () );
+				Navigation.PushModalAsync(new Sagslayout());
+			};
+			b2.Clicked += delegate
+			{
 
+//				App.Current.MainPage = new DataFangstLayout();
+//
+     			Navigation.PushModalAsync(new DataFangstLayout());
+//				var tabs = new TabbedPage();
+//				tabs.Navigation.PushModalAsync(new TabbedPage());
+//				tabs.Children.Add(new DataFangstLayout{Title = "Se Data"});
+//				tabs.Children.Add(new RedigerDataFangstLayout{Title = "Rediger Data"});
+
+			};
+//			b3.Clicked += delegate
+//			{
+//
+//				App.Current.MainPage = new Sagslayout();
+			//Navigation.PushModalAsync(new Sagslayout());
+//			};
+
+			this.Content = new StackLayout {
+				Spacing = 50,
 				Children = {
 					l1,
 					b1,
@@ -55,11 +79,9 @@ namespace WebKaldTest
 				}
 			};
 
-//			b1.Clicked += (object sender, EventArgs e) => 
-//			{
-//				
-//			
-//			};
+
+
+
 		}
 
 	}
