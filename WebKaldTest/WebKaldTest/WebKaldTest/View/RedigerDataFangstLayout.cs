@@ -127,7 +127,9 @@ namespace WebKaldTest
 			};
 
 			//----------egne------------------------
-
+			var tabs = new TabbedPage ();
+			tabs.Children.Add(new DataFangstLayout {Title = "Se Data" });
+		
 
 
 			var scrollview = new ScrollView{			

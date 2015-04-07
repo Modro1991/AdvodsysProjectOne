@@ -7,20 +7,30 @@ namespace WebKaldTest
     public class Sag
     {
         [XmlElement("Nr")]
-        public string nr;
+		public string nr;
 
         [XmlElement("Navn")]
-        public string navn;
+		public string navn;
 
         [XmlElement("Adresse")]
-        public string adresse;
+		public string adresse;
 
         [XmlElement("Postnr")]
-        public string postnr;
+		public string postnr;
 
         [XmlElement("Vedr")]
-        public string vedr;
+		public string vedr;
+
+		public string Summary {
+			get{ return String.Format ("Nummer: {0}, Navn: {1}", nr, navn); }
+		}
+
+		public override string ToString ()
+		{
+			return String.Format ("{0}, {1}, {2}, {3} {4}", nr, navn, adresse, postnr, vedr);
+		}
     }
+
 
     [XmlRoot("SagsListeOgKoder")]
     public class SagCollection
