@@ -19,6 +19,12 @@ namespace WebKaldTest
             string responseBody = await response.Content.ReadAsStringAsync();
             return cleanResponse(responseBody);
         }
+		public static async Task SetData(string funktionsnavn, SortedDictionary<string, string> dictParam)
+		{
+			HttpClient client = new HttpClient();
+			StringContent queryString = new StringContent(bodyFromParamCollection(funktionsnavn, dictParam), Encoding.UTF8, "text/xml");
+			await client.PostAsync(new Uri(advosysUrl + funktionsnavn), queryString);              
+		}
 
         // Dan query body fra collection af parametre
         private static string bodyFromParamCollection(string funktionsnavn, SortedDictionary<string, string> dictParam)

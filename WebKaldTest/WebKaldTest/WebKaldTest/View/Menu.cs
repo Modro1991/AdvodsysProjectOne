@@ -62,12 +62,10 @@ namespace WebKaldTest
 //				tabs.Children.Add(new RedigerDataFangstLayout{Title = "Rediger Data"});
 
 			};
-//			b3.Clicked += delegate
-//			{
-//
-//				App.Current.MainPage = new Sagslayout();
-			//Navigation.PushModalAsync(new Sagslayout());
-//			};
+			b3.Clicked += delegate
+			{
+				Navigation.PushModalAsync(new TidLayout());
+			};
 
 			this.Content = new StackLayout {
 				Spacing = 50,
